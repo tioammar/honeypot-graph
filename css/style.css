@@ -1,0 +1,16 @@
+#col1, #col3 {
+	margin-bottom: 20px;
+}
+
+.upload {
+	margin: 6px -5px 5px 10px;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.top {
+	margin-top: 10px;
+}
