@@ -45,7 +45,7 @@
 					<li><a href="index.php"><span class="glyphicon glyphicon-stats"></span>  Dashboard </a></li>
 					<li><a href="ip.php"><span class="glyphicon glyphicon-tasks"></span>  IP List </a></li>
 					<li><a href="country.php"><span class="glyphicon glyphicon-flag"></span>  Country List</a></li>
-					<li><a href="os.php"><span class="glyphicon glyphicon-hdd"></span>  OS Used </a></li>
+					<li><a href="os.php"><span class="glyphicon glyphicon-hdd"></span>  Operating System </a></li>
 					<li><a href="port.php"><span class="glyphicon glyphicon-import"></span>  Connected Port</a></li>
                 </ul>
             </div>

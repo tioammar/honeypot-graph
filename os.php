@@ -6,7 +6,7 @@
 	<div id="wrapper">
 		<div id='page-wrapper' class='col-xs-10'>
 			<div id="col1" class="col-xs-12">
-				<h1 class="page-header"># OS List</h1>
+				<h1 class="page-header"># Operating System</h1>
 				<table class="table table-bordered table-striped">
 					<thead>
 						<tr class="active">

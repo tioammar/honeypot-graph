@@ -13,7 +13,7 @@
 	<div id="wrapper">
 		<div id='page-wrapper' class='col-xs-10'>
 			<div id="col1" class="col-xs-12">
-				<h1 class="page-header"># Port List</h1>
+				<h1 class="page-header"># Connected Port</h1>
 				<table class="table table-bordered table-striped">
 					<thead>
 						<tr class="active">
