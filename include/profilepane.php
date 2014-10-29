@@ -5,6 +5,7 @@
 			<?php
 			    $location = $country->getCountryByIP($ip);
 			    $fingerprint = $p0f->getOSByIP($ip);
+			    $isp = geoip_isp_by_name($ip);
 			    if ($row = $location->fetch_array()){
 					echo "<li class='list-group-item text-right'><span class='pull-left'>Country</span>" . $row['country_name'] . " <img src='blank.gif' class='flag flag-" . $row['country_code2'] . "'/></li>
 					    <li class='list-group-item text-right'><span class='pull-left'>Region</span>"; if ($row['region']){ echo $row['region']; } else { echo "N/A"; }
@@ -19,8 +20,8 @@
 				else {
 				   	echo "N/A";
 				}
-				echo "</li>";
-				echo "<li class='list-group-item text-right'><span class='pull-left>ISP</span>" . $geoip_isp_by_name($ip) . "</li>";
+				echo "</li>
+				<li class='list-group-item text-right'><span class='pull-left'>ISP</span>" . $isp . "</li>";
 			?>
     </ul>
     <a href="index.php" type="button" class="top btn btn-primary">&larr; Back</a> 
