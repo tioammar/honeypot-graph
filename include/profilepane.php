@@ -1,11 +1,44 @@
+<head>
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="js/plugins/morris.js"></script>
+	<script type="text/javascript" src="js/plugins/raphael-min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/plugins/morris.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/sb-admin.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/flags.css">
+</head>
+
+<script type="text/javascript"
+      	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHvUp8QPFVx6Z0Qg0zkBPU3TGAFYWgBWM">
+    </script>
+    <script type="text/javascript">
+	      function initialize() {
+	      	var myLatlng = new google.maps.LatLng(<?php $record = geoip_record_by_name($ip);  $lat = $record['latitude']; $long = $record['longitude']; echo $lat . "," . $long; ?>)
+	        var mapOptions = {
+		        center: myLatlng,
+		        zoom: 8
+	        };
+	        var map = new google.maps.Map(document.getElementById('maps'),
+	            mapOptions);
+	        var marker = new google.maps.Marker({
+			    position: myLatlng
+			});
+			marker.setMap(map);
+	      }
+	      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</script>
 <div class="col-sm-3">
-	<ul class="list-group">
+<ul class="list-group">
 		<li class="list-group-item text-muted">Profile</li>
 		<li class="list-group-item text-right"><span class="pull-left">IP Address</span> <?php echo $ip ?></li>
 			<?php
 			    $location = $country->getCountryByIP($ip);
 			    $fingerprint = $p0f->getOSByIP($ip);
 			    $isp = geoip_isp_by_name($ip);
+			    $lang
 			    if ($row = $location->fetch_array()){
 					echo "<li class='list-group-item text-right'><span class='pull-left'>Country</span>" . $row['country_name'] . " <img src='blank.gif' class='flag flag-" . $row['country_code2'] . "'/></li>
 					    <li class='list-group-item text-right'><span class='pull-left'>Region</span>"; if ($row['region']){ echo $row['region']; } else { echo "N/A"; }
@@ -25,5 +58,9 @@
 				echo "</li>";
 			?>
     </ul>
+    <div class="panel panel-default">
+    	<div class="panel-heading">Location</div>
+    	<div id="maps" class="panel-body" style="height:380px;"></div>
+    </div>
     <a href="javascript:history.go(-1)" type="button" class="top btn btn-primary">&larr; Back</a> 
 </div> <!-- col-sm-3 -->
