@@ -20,6 +20,7 @@
 				   	echo "N/A";
 				}
 				echo "</li>";
+				echo "<li class='list-group-item text-right'><span class='pull-left>ISP</span>" . $geoip_isp_by_name($ip) . "</li>";
 			?>
     </ul>
     <a href="index.php" type="button" class="top btn btn-primary">&larr; Back</a> 
