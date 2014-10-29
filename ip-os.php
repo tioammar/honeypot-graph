@@ -14,7 +14,7 @@
 	<div id="wrapper">
 		<div id='page-wrapper' class='col-xs-10'>
 			<div id="col1" class="col-xs-12">
-				<?php echo "<<h2 class='page-header'># IP Using " . $os . "</h2>"; ?>
+				<?php echo "<h2 class='page-header'># IP Using " . $os . "</h2>"; ?>
 				<table class="table table-bordered table-striped">
 					<thead>
 						<tr class="active">
