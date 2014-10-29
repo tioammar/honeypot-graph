@@ -21,7 +21,8 @@
 				   	echo "N/A";
 				}
 				echo "</li>
-				<li class='list-group-item text-right'><span class='pull-left'>ISP</span>" . $isp . "</li>";
+				<li class='list-group-item text-right'><span class='pull-left'>ISP</span>"; if ($isp){ echo $isp; } else { echo "N/A"; } 
+				echo "</li>";
 			?>
     </ul>
     <a href="index.php" type="button" class="top btn btn-primary">&larr; Back</a> 
