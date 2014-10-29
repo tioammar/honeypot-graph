@@ -30,7 +30,7 @@
 						?>						
 					</tbody>
 				</table>
-			  	<a href="index.php" type="button" class="top btn btn-primary">&larr; Back</a>
+			  	<a href="javascript:history.go(-1)" type="button" class="top btn btn-primary">&larr; Back</a>
 		  	</div> <!-- col1 -->
 	  	</div> <!-- page-wrapper -->
 	</div> <!-- wrapper -->
