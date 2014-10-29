@@ -1,15 +1,3 @@
-<head>
-	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
-	<script type="text/javascript" src="js/plugins/morris.js"></script>
-	<script type="text/javascript" src="js/plugins/raphael-min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/plugins/morris.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/sb-admin.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/flags.css">
-</head>
-
 <script type="text/javascript"
       	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHvUp8QPFVx6Z0Qg0zkBPU3TGAFYWgBWM">
     </script>
