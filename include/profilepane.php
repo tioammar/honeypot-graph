@@ -38,7 +38,6 @@
 			    $location = $country->getCountryByIP($ip);
 			    $fingerprint = $p0f->getOSByIP($ip);
 			    $isp = geoip_isp_by_name($ip);
-			    $lang
 			    if ($row = $location->fetch_array()){
 					echo "<li class='list-group-item text-right'><span class='pull-left'>Country</span>" . $row['country_name'] . " <img src='blank.gif' class='flag flag-" . $row['country_code2'] . "'/></li>
 					    <li class='list-group-item text-right'><span class='pull-left'>Region</span>"; if ($row['region']){ echo $row['region']; } else { echo "N/A"; }
