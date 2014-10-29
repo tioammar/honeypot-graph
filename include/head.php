@@ -38,7 +38,7 @@
 	<div id="head">
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="navbar-header">
-            	<img src="img/unhas_logo.png" class="logo">
+            	<img class="logo" src="img/unhas_logo.png">
                 <a class="navbar-brand" href="index.php">Network Intrusion Profiling</a>
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
